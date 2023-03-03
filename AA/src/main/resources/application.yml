@@ -1,7 +1,12 @@
 
 
 
-
 spring:  mvc:    view:      prefix: /WEB-INF/      suffix: .jsp
         thymeleaf:    enabled: false
-
+#test
+#mysql과 연동하기 추가
+datasource:
+drive-class-name: com.mysql.cj.jdbc.Driver
+url: jdbc:mysql://127.0.0.1:3306/com
+username: com
+password: com01

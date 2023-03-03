@@ -19,8 +19,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
             .authorizeRequests()
                 .anyRequest().authenticated() //인증된 사용자만 접근
             .and()
-                .formLogin() //폼 로그인 사용
-            .and()
                 .httpBasic() // httpBasic 사용
             .and()
                 .sessionManagement()
