@@ -19,6 +19,6 @@ public class Board { // 게시판 테이블
 	private String board_text; 			// 게시글 내용
 	private int board_writer_idx; 		// 게시글 작성자 인덱스
 	private String board_date; 			// 게시글 작성일자
-	private String board_writer_name; 	// 게시글 작성자 -> Member.java의 name
+	private String board_writer_name; 	// 게시글 작성자 -> Member의 user_name
 	
 }
