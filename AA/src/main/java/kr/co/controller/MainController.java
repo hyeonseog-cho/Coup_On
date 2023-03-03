@@ -6,19 +6,14 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 @Controller
-@RequestMapping("/mainpage")
+@RequestMapping("/main")
 public class MainController {
 
-
-    @GetMapping("/room-list")
-    public String rooms() {
+    @GetMapping("/room_list")
+    public String room_list() {
         
-        return "/mainpage/room-list";
+        return "main/room_list";
     }
 
 
-    @GetMapping("")
-    public String index() {
-        return "index";
-    }
 }

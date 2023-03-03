@@ -17,7 +17,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http.
             csrf().disable()
             .authorizeRequests()
-                .mvcMatchers("/").permitAll() //여기는 아무나 접근
                 .anyRequest().authenticated() //인증된 사용자만 접근
             .and()
                 .formLogin() //폼 로그인 사용
@@ -26,6 +25,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
             .and()
                 .sessionManagement()
                 .maximumSessions(1);
+        
+        
     }
 
     @Override
@@ -34,5 +35,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .withUser("aa").password("{noop}1234").roles("USER").and()
                 .withUser("bb").password("{noop}1234").roles("USER").and()
                 .withUser("cc").password("{noop}1234").roles("USER");
+        // auth.userDetailsService(userDetailsService);
     }
 }
