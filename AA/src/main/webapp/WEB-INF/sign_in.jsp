@@ -9,7 +9,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form action="${root }/main/room_list" method="post">
 		<ul>
 			<li onclick="kakaoLogin();"><a href="javascript:void(0)"> <span>카카오
 						로그인</span>
@@ -19,9 +18,6 @@
 			</a></li>
 		</ul>
 		<br>
-
-		<button>방목록보기</button>
-	</form>
 
 	<!-- 카카오 스크립트 -->
 	<script src="https://developers.kakao.com/sdk/js/kakao.js"></script>

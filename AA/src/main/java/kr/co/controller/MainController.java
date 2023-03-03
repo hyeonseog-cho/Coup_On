@@ -22,9 +22,5 @@ public class MainController {
 		return "sign_in";
 	}  
     
-    @PostMapping("/room_list")
-    public String sign_in(Member memberVo) {
-        return "main/room_list";
-    }
 }
 
